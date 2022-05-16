@@ -1,0 +1,129 @@
+.allposts-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fef1eb;
+  height: 200px;
+}
+
+.all-posts-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.allposts-header h1 {
+  font-size: 30px;
+}
+
+.allposts {
+  padding: 40px 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.each-post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.each-post h2 {
+  margin-bottom: 30px;
+  color: #272343;
+}
+
+.each-post h2::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 3px;
+  width: 100px;
+  background-color: #fb743e;
+}
+
+.each-post div {
+  min-width: 300px;
+  width: 30%;
+}
+
+.each-post div .post-informations {
+  background: #6d7280;
+  color: white;
+  width: 95%;
+  min-width: 280px;
+  padding: 5%;
+  position: relative;
+  top: -30px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.each-post img {
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.each-post div .post-informations a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+.each-post div .post-informations h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 280px;
+  font-size: 18px;
+}
+
+.post-categories::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  background-color: #fb743e;
+  height: 1.5px;
+  width: 15px;
+  top: -3px;
+  margin-right: 5px;
+}
+
+.post-categories li {
+  list-style: none;
+}
+
+.each-post div .post-informations p:nth-child(3) {
+  font-size: 10px;
+}
+
+.each-post div .post-informations .read-article-container {
+  position: absolute;
+  bottom: 5px;
+}
+
+.each-post .cta span {
+  color: white;
+}
+
+.each-post .cta svg {
+  fill: white;
+}
+
+.page-numbers {
+  color: white;
+  background: #272343;
+  padding: 2px 15px;
+  text-decoration: none;
+}
+
+.current {
+  background: #fb743e;
+}
